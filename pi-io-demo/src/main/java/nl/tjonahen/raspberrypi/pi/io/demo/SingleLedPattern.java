@@ -14,46 +14,32 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package nl.tjonahen.pi.io.demo;
+package nl.tjonahen.raspberrypi.pi.io.demo;
 
 import com.pi4j.io.gpio.GpioPinDigitalOutput;
+import com.pi4j.io.gpio.PinState;
 
 /**
  *
  * @author Philippe Tjon-A-Hen philippe@tjonahen.nl
  */
-public class CountLedPattern extends LedPattern {
+public class SingleLedPattern extends LedPattern {
 
-    public CountLedPattern(final GpioPinDigitalOutput[] led) {
+    private final int ledNumber;
+
+    public SingleLedPattern(final GpioPinDigitalOutput[] led, final int ledNumber) {
         super(led);
+        this.ledNumber = ledNumber;
     }
 
     @Override
     void execute() {
         try {
-            setStates(false, false, true);
+            led[ledNumber].setState(PinState.HIGH);
             Thread.sleep(200);
-            setStates(false, true, false);
-            Thread.sleep(200);
-            setStates(false, true, true);
-            Thread.sleep(200);
-            setStates(true, false, false);
-            Thread.sleep(200);
-            setStates(true, false, true);
-            Thread.sleep(200);
-            setStates(true, true, false);
-            Thread.sleep(200);
-            setStates(true, true, true);
-            Thread.sleep(200);
-            setStates(false, false, false);
-        } catch (InterruptedException e) {
+            led[ledNumber].setState(PinState.LOW);
+        } catch (InterruptedException ex) {
             ;
         }
-    }
-
-    private void setStates(final boolean bit3, final boolean bit2, final boolean bit1) {
-        led[2].setState(bit3);
-        led[1].setState(bit2);
-        led[0].setState(bit1);
     }
 }

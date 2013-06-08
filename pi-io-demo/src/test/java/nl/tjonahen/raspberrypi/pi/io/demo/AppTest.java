@@ -1,4 +1,4 @@
-package nl.tjonahen.pi.io.demo;
+package nl.tjonahen.raspberrypi.pi.io.demo;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

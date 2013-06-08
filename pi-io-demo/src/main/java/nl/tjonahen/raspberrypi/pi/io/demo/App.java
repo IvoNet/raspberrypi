@@ -1,4 +1,4 @@
-package nl.tjonahen.pi.io.demo;
+package nl.tjonahen.raspberrypi.pi.io.demo;
 
 import com.pi4j.io.gpio.GpioController;
 import com.pi4j.io.gpio.GpioFactory;

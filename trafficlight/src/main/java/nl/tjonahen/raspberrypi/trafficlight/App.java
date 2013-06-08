@@ -1,4 +1,4 @@
-package nl.tjonahen.trafficlight;
+package nl.tjonahen.raspberrypi.trafficlight;
 
 import com.pi4j.io.gpio.GpioController;
 import com.pi4j.io.gpio.GpioFactory;

@@ -14,20 +14,36 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package nl.tjonahen.pi.io.demo;
+package nl.tjonahen.raspberrypi.pi.io.demo;
 
 import com.pi4j.io.gpio.GpioPinDigitalOutput;
+import com.pi4j.io.gpio.PinState;
 
 /**
  *
  * @author Philippe Tjon-A-Hen philippe@tjonahen.nl
  */
-public abstract class LedPattern {
-    protected final GpioPinDigitalOutput led[];
-    
-    public LedPattern(final GpioPinDigitalOutput led[]) {
-        this.led = led;
+public class ProgressLedPattern extends LedPattern {
+
+    public ProgressLedPattern(final GpioPinDigitalOutput[] led) {
+        super(led);
     }
-    
-    abstract void execute();
+
+    @Override
+    void execute() {
+        try {
+            for (int i = 0; i < led.length; i++) {
+                led[i].setState(PinState.HIGH);
+                Thread.sleep(200);
+            }
+
+            for (int i = led.length - 1; i >= 0; i--) {
+                led[i].setState(PinState.LOW);
+                Thread.sleep(200);
+            }
+        } catch (InterruptedException e) {
+            ;
+        }
+
+    }
 }
