@@ -3,18 +3,17 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>nl.tjonahen.raspberrypi</groupId>
-    <artifactId>trafficlight</artifactId>
+    <artifactId>onoff</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>RaspberryPI TrafficLight</name>
+    <name>RaspberryPi onoff</name>
     <url>http://maven.apache.org</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <netbeans.hint.license>gpl30</netbeans.hint.license>
     </properties>
-
     <repositories>
         <repository>
             <id>oss-snapshots-repo</id>
@@ -32,5 +31,5 @@
             <artifactId>pi4j-core</artifactId>
             <version>0.0.5-SNAPSHOT</version>
         </dependency>      
-    </dependencies>  
+    </dependencies>
 </project>
