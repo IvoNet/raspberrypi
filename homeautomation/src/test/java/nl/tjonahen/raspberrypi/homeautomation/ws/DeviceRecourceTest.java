@@ -16,9 +16,7 @@
  */
 package nl.tjonahen.raspberrypi.homeautomation.ws;
 
-import nl.tjonahen.raspberrypi.homeautomation.ws.DeviceRecource;
 import nl.tjonahen.raspberrypi.homeautomation.access.gpio.GpioAccess;
-import nl.tjonahen.raspberrypi.homeautomation.access.my.MyGpioController;
 import nl.tjonahen.raspberrypi.homeautomation.access.my.MyPiConfig;
 import nl.tjonahen.raspberrypi.homeautomation.ws.model.Attributes;
 import org.junit.After;

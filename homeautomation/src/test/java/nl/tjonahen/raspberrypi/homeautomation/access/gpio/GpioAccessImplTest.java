@@ -16,43 +16,20 @@
  */
 package nl.tjonahen.raspberrypi.homeautomation.access.gpio;
 
-import nl.tjonahen.raspberrypi.homeautomation.access.gpio.GpioAccess;
-import com.pi4j.io.gpio.GpioController;
 import java.util.Collection;
 import nl.tjonahen.raspberrypi.homeautomation.access.IGpioDevice;
 import nl.tjonahen.raspberrypi.homeautomation.access.my.MyGpioController;
 import nl.tjonahen.raspberrypi.homeautomation.access.my.MyPiConfig;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import org.junit.Ignore;
 
 /**
  *
  * @author Philippe Tjon-A-Hen philippe@tjonahen.nl
  */
+@Ignore
 public class GpioAccessImplTest {
-    public GpioAccessImplTest() {
-    }
-    
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
-
 
     /**
      * Test of getDevices method, of class GpioAccess.

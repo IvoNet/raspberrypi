@@ -6,11 +6,48 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>RaspberryPi</name>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <netbeans.hint.license>gpl30</netbeans.hint.license>
+    </properties>
+
     <scm>
         <connection>scm:git:git@github.com:pnmtjonahen/raspberrypi.git</connection>
         <url>scm:git:git@github.com:pnmtjonahen/raspberrypi.git</url>
         <developerConnection>scm:git:git@github.com:pnmtjonahen/raspberrypi.git</developerConnection>
     </scm>
+    <repositories>
+        <repository>
+            <id>oss-snapshots-repo</id>
+            <name>Sonatype OSS Maven Repository</name>
+            <url>https://oss.sonatype.org/content/groups/public</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </repository>
+    </repositories>
+    
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.11</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pi4j</groupId>
+                <artifactId>pi4j-core</artifactId>
+                <version>0.0.5</version>
+            </dependency>
+            <dependency>
+                <groupId>javax</groupId>
+                <artifactId>javaee-web-api</artifactId>
+                <version>7.0</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
     <build>
         <plugins>
             <plugin>
