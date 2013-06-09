@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>nl.tjonahen</groupId>
     <artifactId>raspberrypi</artifactId>
-    <version>1.0</version>
+    <version>1.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>RaspberryPi</name>
 
@@ -16,7 +16,7 @@
         <connection>scm:git:git@github.com:pnmtjonahen/raspberrypi.git</connection>
         <url>scm:git:git@github.com:pnmtjonahen/raspberrypi.git</url>
         <developerConnection>scm:git:git@github.com:pnmtjonahen/raspberrypi.git</developerConnection>
-      <tag>raspberrypi-1.0</tag>
+      <tag>HEAD</tag>
   </scm>
     <distributionManagement>
         <repository>
