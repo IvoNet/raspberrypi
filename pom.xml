@@ -17,6 +17,12 @@
         <url>scm:git:git@github.com:pnmtjonahen/raspberrypi.git</url>
         <developerConnection>scm:git:git@github.com:pnmtjonahen/raspberrypi.git</developerConnection>
     </scm>
+    <distributionManagement>
+        <repository>
+            <id>maven-repository</id>
+            <url>file:////tmp/</url>
+        </repository>
+    </distributionManagement>    
     <repositories>
         <repository>
             <id>oss-snapshots-repo</id>
