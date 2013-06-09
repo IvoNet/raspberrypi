@@ -3,11 +3,11 @@
     <parent>
         <groupId>nl.tjonahen</groupId>
         <artifactId>raspberrypi</artifactId>
-        <version>1.0</version>
+        <version>1.1-SNAPSHOT</version>
     </parent>
     <groupId>nl.tjonahen.raspberrypi</groupId>
     <artifactId>onoff</artifactId>
-    <version>1.0</version>
+    <version>1.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>RaspberryPi onoff</name>
