@@ -8,3 +8,4 @@ My RaspberryPi Stuff
 * TrafficLight is my attempt in creating a traffic light
 * pi-io-demo Is a led light pattern and input demo. It uses all the GPIO ports including the ones on P5. 
 GPIO07 is used for input and the rest for output. I am using a Gertboard to test the functionality.
+* dac shows how to use the digital to analog converter on the gertboard
